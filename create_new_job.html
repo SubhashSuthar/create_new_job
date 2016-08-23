@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create New Cluster</title>
+	<link rel="stylesheet" href="form.css"/>  
+   
+</head>
+<body>
+		<div id="form_sample">
+                <form id="myform">
+                    	<center><h2>Create New Job</h2></center>
+                    
+                        
+
+
+                        
+		job name:<input type="text" id="jobname" name="jobname"  /><br/>
+		select standard program:<input type="radio"  id="standardprogram"  name="standardprogram"  value="yes" />yes
+		<input type="radio" name="standardprogram"  id="standardprogram" value="no"  />no
+	    <br/>
+		program:<input type="radio" id="program" name="program"  value="wordcount" />wordcount
+		<input type="radio" name="program" id="program"  value="sort" />sort<input type="radio" name="standardprogram"  value="aggregate" />aggregate<input type="radio" name="standardprogram" value="count" />count words
+		<br/>
+		mapper<input type="text"  id="mapper" name="mapper" /><br>
+		reducer<input type="text" id="reducer" name="reducer"/><br/>
+		storage name<input type="text" id="storagename" name="storagename"/><br/>
+		input location<input type="text" id="inlocation" name="inlocation"/><br/>
+		output location<input type="text" id="outlocation"  name="outlocation"/><br/>
+		extra arguments<input type="text" name="arguments"/><br/>
+
+		<label >Platform :</label><br/>                    	
+						<br/><input type="radio"   name="platform" value="hadoop1" />Hadoop V1<br/>
+                    	<input type="radio"    value="hadoop2" name="platform"   />Hadoop V2<br/>
+
+	
+                     	<br/><label>No of Instances :</label>
+                        <br/>
+                        <input type="text" id="no_instances" name="no_instances" /><br/><br/>
+                       	<label >Type of Instance:</label><br/>
+
+                    	<br/><input type="radio"  value="small" name="typeofinstance" />small
+                    	<input type="radio"  value="medium" name="typeofinstance" />medium	
+                    	<input type="radio"  value="large" name="typeofinstance" />large	
+						<br/>
+                        <input type="submit" id="reset" onclick="resetform()" value="Reset"/>
+                    	<br/><input type="submit" onclick="myfunction()" id="submit" value="submit"/>
+                    
+
+                </form>
+        </div>
+            <script src="form.js"></script>	
+      
+</body>
+</html>
